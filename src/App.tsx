@@ -1,4 +1,4 @@
-import './App.css'
+import './App.scss'
 import ImgFriends from "./components/ImgFriends/ImgFriends.tsx";
 import AboutPersona from "./components/AboutPersona/AboutPersona.tsx";
 import avatar from './assets/images/avatar.png'
