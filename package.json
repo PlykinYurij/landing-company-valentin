@@ -1,7 +1,6 @@
 {
   "name": "lending-valentin",
   "private": true,
-  "homepage": "https://plykinyurij.github.io/landing-company-valentin/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
