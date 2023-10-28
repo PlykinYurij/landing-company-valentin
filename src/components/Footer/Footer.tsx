@@ -1,15 +1,18 @@
 import classes from "./Footer.module.scss";
 import Link from "../UI/Link/Link.tsx";
+import doc from "../../assets/docs/docs.pdf"
+import data from "../../assets/docs/docs.pdf"
+import document from "../../assets/docs/docs.pdf"
 
 const Footer = () => {
     function openDocument() {
-        window.open('/docs/document.pdf', '_blank')
+        window.open(document, '_blank')
     }
     function openDocs() {
-        window.open('/docs/docs.pdf', '_blank')
+        window.open(doc, '_blank')
     }
     function openData() {
-        window.open('/docs/data.pdf', '_blank')
+        window.open(data, '_blank')
     }
     return (
         <div className={classes.containerFooter}>
