@@ -5,14 +5,20 @@ import avatar from './assets/images/avatar.png'
 import VideosContent from "./components/VideosContent/VideosContent.tsx";
 import Button from "./components/UI/Button/Button.tsx";
 import Footer from "./components/Footer/Footer.tsx";
+import Header from "./components/Header/Header.tsx";
 
 function App() {
 
 
     return (
         <>
+            <header>
+                <Header/>
+            </header>
             <main>
-                <ImgFriends/>
+                <div className={'container-img-friends'}>
+                    <ImgFriends/>
+                </div>
                 <div className='container-about-persons'>
                     <AboutPersona
                         avatar={avatar}

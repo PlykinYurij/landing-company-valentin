@@ -3,6 +3,9 @@ import Link from "../UI/Link/Link.tsx";
 import doc from "../../assets/docs/docs.pdf"
 import data from "../../assets/docs/docs.pdf"
 import document from "../../assets/docs/docs.pdf"
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faVk} from "@fortawesome/free-brands-svg-icons";
+import {faTelegram} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     function openDocument() {
@@ -13,6 +16,12 @@ const Footer = () => {
     }
     function openData() {
         window.open(data, '_blank')
+    }
+    function clickVk() {
+        window.open('https://vk.com/', '_blank')
+    }
+    function clickTelegram() {
+        window.open('https://t.me/telegram', '_blank')
     }
     return (
         <div className={classes.containerFooter}>
@@ -56,6 +65,28 @@ const Footer = () => {
                 </div>
                 <div>
                     +7 (999) 999-99-99
+                </div>
+                <div className={classes.containerIcons}>
+                    <div
+                        className={classes.containerIcon}
+                        onClick={clickVk}
+                    >
+                        <FontAwesomeIcon
+                            icon={faVk}
+                            style={{color: "#005eff"}}
+                            size={"2xl"}
+                        />
+                    </div>
+                    <div
+                        className={classes.containerIcon}
+                        onClick={clickTelegram}
+                    >
+                        <FontAwesomeIcon
+                            icon={faTelegram}
+                            style={{color: "#005eff"}}
+                            size={"2xl"}
+                        />
+                    </div>
                 </div>
             </div>
         </div>

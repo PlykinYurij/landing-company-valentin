@@ -20,6 +20,21 @@
   width: 300px;
 }
 
+.containerIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.containerIcon {
+  cursor: pointer;
+}
+
+.icon {
+  width: 100%;
+  object-fit: contain;
+  color: blue;
+}
+
 .containerAboutCompany {
   @include adaptive-font(20, 15);
   display: flex;
@@ -35,7 +50,6 @@
   .containerFooter {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
     gap: 30px;
   }
 }

@@ -1,0 +1,22 @@
+.containerHeader {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.containerLogo {
+  width: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.companyName {
+  font-size: 20px;
+}
