@@ -3,13 +3,13 @@ import Link from "../UI/Link/Link.tsx";
 
 const Footer = () => {
     function openDocument() {
-        window.open('/public/docs/document.pdf', '_blank')
+        window.open('/docs/document.pdf', '_blank')
     }
     function openDocs() {
-        window.open('/public/docs/docs.pdf', '_blank')
+        window.open('/docs/docs.pdf', '_blank')
     }
     function openData() {
-        window.open('/public/docs/data.pdf', '_blank')
+        window.open('/docs/data.pdf', '_blank')
     }
     return (
         <div className={classes.containerFooter}>
