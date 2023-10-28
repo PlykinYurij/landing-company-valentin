@@ -1,0 +1,59 @@
+@import "src/styles/adaptiveFont";
+.containerCard {
+  display: flex;
+  overflow: hidden;
+  padding: 20px;
+  max-width: 1000px;
+}
+
+.containerAvatar {
+  width: 30%;
+  overflow: hidden;
+  .img {
+    object-fit: contain;
+    width: 100%;
+  }
+}
+
+.containerContent {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  text-align: center;
+  color: white;
+}
+.containerImg {
+  border-radius: 20px;
+  background: white;
+}
+
+.title {
+  @include adaptive-font(40, 32);
+  font-weight: 700;
+}
+
+.description {
+  @include adaptive-font(25, 20);
+  font-weight: 400;
+}
+
+@media (max-width: 860px) {
+  .containerCard {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .containerAvatar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .containerContent {
+    width: 100%;
+  }
+  .containerImg {
+    width: 50%;
+  }
+}

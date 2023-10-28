@@ -1,0 +1,11 @@
+.containerVideos {
+  display: flex;
+  justify-content: space-around;
+  gap: 5px;
+  width: 100%;
+  @media (max-width: 860px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

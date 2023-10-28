@@ -1,0 +1,41 @@
+@import "src/styles/adaptiveFont";
+
+.containerFooter {
+  padding: 20px 10px;
+  width: 100%;
+  background-color: #141c24;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.containerDocuments {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.containerLink {
+  width: 300px;
+}
+
+.containerAboutCompany {
+  @include adaptive-font(20, 15);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.containerContacts {
+  @extend .containerAboutCompany
+}
+
+@media (max-width: 860px) {
+  .containerFooter {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
