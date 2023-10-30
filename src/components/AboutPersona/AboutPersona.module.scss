@@ -23,7 +23,6 @@
   justify-content: center;
   padding: 10px 20px;
   text-align: center;
-  color: white;
 }
 .containerImg {
   border-radius: 20px;
@@ -36,8 +35,9 @@
 }
 
 .description {
-  @include adaptive-font(25, 20);
+  @include adaptive-font(20, 15);
   font-weight: 400;
+  margin-top: 10px;
 }
 
 @media (max-width: 860px) {

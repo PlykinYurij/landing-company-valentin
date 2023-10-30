@@ -26,7 +26,6 @@ nav, footer, header, aside {
 html, body {
     height: 100%;
     width: 100%;
-    font-size: 100%;
     line-height: normal;
     font-size: 14px;
     -ms-text-size-adjust: 100%;
@@ -76,7 +75,8 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------*/
 
 #root {
-    background: #101820;
+    /*background: #101820;*/
+    background: #fffdcb7e;
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
+    color: #101820;
 }

@@ -1,8 +1,8 @@
 import classes from "./Footer.module.scss";
 import Link from "../UI/Link/Link.tsx";
 import doc from "../../assets/docs/docs.pdf"
-import data from "../../assets/docs/docs.pdf"
-import document from "../../assets/docs/docs.pdf"
+import data from "../../assets/docs/data.pdf"
+import document from "../../assets/docs/document.pdf"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faVk} from "@fortawesome/free-brands-svg-icons";
 import {faTelegram} from "@fortawesome/free-brands-svg-icons";
@@ -29,7 +29,7 @@ const Footer = () => {
                 <div className={classes.containerLink}>
                     <Link
                         title={'Договор конфиденциальности'}
-                        onClick={openDocs}
+                        onClick={openDocument}
                     />
                 </div>
                 <div className={classes.containerLink}>
@@ -41,7 +41,7 @@ const Footer = () => {
                 <div className={classes.containerLink}>
                     <Link
                         title={'Документы о фирме'}
-                        onClick={openDocument}
+                        onClick={openDocs}
                     />
                 </div>
             </div>
@@ -73,7 +73,8 @@ const Footer = () => {
                     >
                         <FontAwesomeIcon
                             icon={faVk}
-                            style={{color: "#005eff"}}
+                                // style={{color: "#005eff"}}
+                            style={{color: "rgba(171, 7, 56, 0.5)"}}
                             size={"2xl"}
                         />
                     </div>
@@ -83,7 +84,8 @@ const Footer = () => {
                     >
                         <FontAwesomeIcon
                             icon={faTelegram}
-                            style={{color: "#005eff"}}
+                            // style={{color: "#005eff"}}
+                            style={{color: "rgba(171, 7, 56, 0.5)"}}
                             size={"2xl"}
                         />
                     </div>
